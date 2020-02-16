@@ -30,6 +30,6 @@ void hexxor(char* string1, char* string2, char* result)
 		derp[0] = string2[i];
 		b = strtol(derp, &ptr, 16);
 		
-		snprintf(&result[i], 1, "%d", a ^ b);
+		snprintf(&result[i], 1, "%x", a ^ b);
 	}
 }
